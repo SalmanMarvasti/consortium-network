@@ -8,3 +8,5 @@ To start run the { /network/start.sh} script which will bring up a 3 node ETH ne
 Quorum supports larger contract storage space by default than ethereum as gas price is not a factor in private .
 IBFT is chosen due to requirement that members dont trust each other
 4 Validators are set which can be managed by consortium or neutral party
+
+outside the setup the smart contract code and scripts reside in /network/consortium_contracts directory
