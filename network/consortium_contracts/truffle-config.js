@@ -19,7 +19,19 @@ module.exports = {
       type: "quorum",
       gasPrice: 0
     },
-   
+    memberone_ws:  {
+
+      provider: () => new Web3.providers.WebsocketProvider("ws://localhost:8546", {
+        headers: {
+          origin: "127.0.0.1"
+        }}),
+          host: "127.0.0.1",
+		      port: 20001,
+		      network_id: "*", // Match any network id
+		      gasPrice: 0,
+		      gas: 4500000,
+		      type: "quorum" // needed for Truffle to support Quorum
+		    },
     memberone:  {
 
       provider: () => new PrivateKeyProvider(privateKey, "http://localhost:8545"),
